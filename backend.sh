@@ -49,9 +49,9 @@ dnf install git telnet nodejs amazon-cloudwatch-agent -y &>>"$LOG_FILE"
 LOG "Installing git, telnet, Node.js 20, and CloudWatch Agent" $?
 
 # Add 'expense' user if not exists
-if ! id -u mini &>/dev/null; then
-    useradd mini &>>"$LOG_FILE"
-    LOG "Adding 'mini' user" $?
+if ! id -u expense &>/dev/null; then
+    useradd expense &>>"$LOG_FILE"
+    LOG "Adding 'expense' user" $?
 fi
 
 # Clone backend repository if directory doesn't exist
