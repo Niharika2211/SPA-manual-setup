@@ -29,7 +29,7 @@ cat <<EOF > $SERVICE_FILE
 Description=Backend Service
 
 [Service]
-User=mini
+User=expense
 Environment="DB_HOST=${DB_HOST}"
 Environment="DB_USER=${DB_USER}"
 Environment="DB_PASSWORD=${DB_PASSWORD}" 
